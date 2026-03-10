@@ -1,16 +1,115 @@
-# todoapp
+# Flutter Todo App
 
-A new Flutter project.
+A simple and clean **Todo Application built using Flutter** with **Firebase Authentication** and **Firebase Realtime Database**.
+This application allows users to manage their daily tasks efficiently with a smooth and responsive user interface.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
 
-A few resources to get you started if this is your first Flutter project:
+* 🔐 **User Authentication**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+  * Signup with Email & Password
+  * Login with Firebase Authentication
+  * Persistent login using SharedPreferences
+  * Logout functionality
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+* 📝 **Task Management**
+
+  * Add new tasks
+  * Edit existing tasks
+  * Mark tasks as completed
+  * Delete tasks
+  * View all tasks
+
+* 🔄 **Pull to Refresh**
+
+  * Refresh tasks list by pulling down the screen
+
+* ☁️ **Firebase Integration**
+
+  * Firebase Authentication
+  * Firebase Realtime Database
+  * REST API calls for task operations
+
+* ⚙️ **State Management**
+
+  * Implemented using **Provider**
+
+* 📱 **Responsive UI**
+
+  * Works smoothly on different screen sizes
+
+---
+
+## 🛠️ Tech Stack
+
+* **Flutter**
+* **Dart**
+* **Firebase Authentication**
+* **Firebase Realtime Database**
+* **Provider (State Management)**
+* **SharedPreferences**
+* **HTTP Package**
+
+---
+
+## 📂 Project Structure
+
+lib/
+│
+├── home/
+│ └── homepage.dart
+│
+├── login_signup/
+│ ├── loginpage.dart
+│ └── signuppage.dart
+│
+├── providers/
+│ ├── auth_provider.dart
+│ └── task_provider.dart
+│
+├── service/
+│ ├── auth_service.dart
+│ └── task_service.dart
+│
+├── splashscreen.dart
+│
+└── main.dart
+
+---
+
+
+## 📌 How to Run the Project
+
+1. Clone the repository
+
+git clone https://github.com/yourusername/flutter-todo-app
+
+2. Navigate to project folder
+
+cd flutter-todo-app
+
+3. Install dependencies
+
+flutter pub get
+
+4. Run the app
+
+flutter run
+
+---
+
+## 👨‍💻 Author
+
+**Satyam**
+
+Flutter Developer
+
+---
+
+## 📧 Contact
+
+If you have any questions regarding the project, feel free to contact.
+
+Email: satyam10april02@gmail.com
