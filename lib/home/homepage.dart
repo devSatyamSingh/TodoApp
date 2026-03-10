@@ -227,7 +227,7 @@ class _HomePagesState extends State<HomePages> {
                       child: tasks.isEmpty
                           ? ListView(
                               children: [
-                                SizedBox(height: h * 0.2),
+                                SizedBox(height: h * 0.17),
                                 _buildEmptyState(w, h),
                               ],
                             )
@@ -527,16 +527,18 @@ class _HomePagesState extends State<HomePages> {
             ),
 
             ElevatedButton(
-              onPressed: () {
+              onPressed: () async {
                 setState(() {
                   isProcessing = true;
                 });
-                context.read<TaskProvider>().deleteTask(tasks[index]["id"]);
-
+                await context.read<TaskProvider>().deleteTask(tasks[index]["id"]);
+                setState(() {
+                  isProcessing = false;
+                });
                 Navigator.pop(context);
               },
               child: Text("Delete"),
-            ),
+            )
           ],
         );
       },

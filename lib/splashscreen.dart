@@ -86,15 +86,11 @@ class _SplashScreenState extends State<SplashScreen>
           child: ScaleTransition(
             scale: scaleAnim,
             child: Column(
-
               mainAxisAlignment: MainAxisAlignment.center,
-
               children: [
-
                 Container(
                   height: 120,
                   width: 120,
-
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     image: DecorationImage(
@@ -108,25 +104,21 @@ class _SplashScreenState extends State<SplashScreen>
                     ],
                   ),
                 ),
-
-                SizedBox(height: 24),
-
+                SizedBox(height: 20),
                 Text(
                   "Todo App",
                   style: TextStyle(
-                    fontSize: 28,
+                    fontSize: 25,
                     fontWeight: FontWeight.bold,
                     color: Colors.white,
                     letterSpacing: 1,
                   ),
                 ),
-
                 SizedBox(height: 6),
-
                 Text(
-                  "Manage Your Task In This Application",
+                  "Manage Your Task In This App",
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 13,
                     color: Colors.white70,
                   ),
                 ),
