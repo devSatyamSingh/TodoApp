@@ -84,7 +84,7 @@ lib/
 
 1. Clone the repository
 
-git clone https://github.com/yourusername/flutter-todo-app
+git clone 
 
 2. Navigate to project folder
 
